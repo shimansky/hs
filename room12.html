@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>hidden structure</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0" xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="yellow-outline">
+            <feFlood id="outline-color" flood-color="#ffff00AA" result="base"/>
+            <feMorphology result="bigger" in="SourceGraphic" operator="dilate" radius="1"/>
+            <feComposite result="drop" in="base" in2="mask" operator="in"/>
+            <feBlend in="SourceGraphic" in2="normal" mode="normal"/>
+        </filter>
+    </defs>
+</svg>
+
+
+<div id="wievport" onclick="sensorPlayerAttack()">
+  	<div id="game">
+       <!-- secret doors -->
+       <div id="secretLift" style="left: 200px; bottom: 1400px;"></div>
+
+       <!-- trees -->
+       <div class="tree" style="left: 150px; bottom: 1250px; position: absolute;"></div>
+       <div class="tree" style="left: 400px; bottom: 1250px; position: absolute;"></div>
+       <div class="tree" style="left: 650px; bottom: 1250px; position: absolute;"></div>
+
+       <!-- policeLine -->
+       <div class="person" id="policeLine" style="left: 500px; bottom: 550px; position: absolute;"></div>
+       
+       
+       <!-- doors -->
+       <div id="animExitLift" style="left: 1400px; bottom: 300px;"></div>
+
+
+      <!-- personage -->
+      <div id="cop" class="person" style="left: 350px; bottom: 750px; position: absolute;" onclick="copStory()"></div>
+      <div id="cop2" class="person" style="left: 300px; bottom: 650px; position: absolute;" onclick="cop2Story()"></div>
+       <!-- orbita logo -->
+       <div class="orbita" style="left:475px; bottom: 50px; position: absolute;"></div>
+
+       <!-- car & stop -->
+       <div id="car" class="person" style="left: 150px; bottom: 700px; position: absolute;" onclick="beep()"></div>
+       <div id="police" class="person" style="left: 320px; bottom: 600px; position: absolute;" onclick="beep()"></div>
+       <div id="police2" class="person" style="left: 320px; bottom: 800px; position: absolute;" onclick="beep()"></div>
+       <div id="whiteCar" class="person" style="left: 450px; bottom: 250px; position: absolute;" onclick="beepTab()"></div>
+
+       <div class="stop" style="left: 300px; bottom: 850px; position: absolute;"></div>
+       <div class="stop" style="left: 450px; bottom: 550px; position: absolute;"></div>
+       <div class="stop" style="left: 750px; bottom: 550px; position: absolute;"></div>
+       <!-- neon board pizza-->
+       <div class="pizza" style="left: 800px; bottom: 950px; position: absolute;"></div>
+       <div class="pizza" style="left: 800px; bottom: 850px; position: absolute;"></div>
+
+       <!-- furniture -->
+       <div class="sofa" style="left: 950px; bottom: 1050px; position: absolute;"></div>
+       <div class="sofa" style="left: 1100px; bottom: 1050px; position: absolute;"></div>
+       <div class="sofa" style="left: 950px; bottom: 950px; position: absolute;"></div>
+       <div class="sofa" style="left: 950px; bottom: 850px; position: absolute;"></div>
+       <div class="sofa" style="left: 950px; bottom: 750px; position: absolute;"></div>
+       <div class="sofa" style="left: 950px; bottom: 650px; position: absolute;"></div>
+       <div class="sofa" style="left: 1100px; bottom: 700px; position: absolute;"></div>
+       <div class="armchair" style="left: 1200px; bottom: 950px; position: absolute;"></div>
+       <div class="armchair" style="left: 1200px; bottom: 850px; position: absolute;"></div>
+       <div class="armchair" style="left: 1200px; bottom: 750px; position: absolute;"></div>
+       <div class="table" style="left: 950px; bottom: 830px; position: absolute;"></div>
+       <div class="table" style="left: 950px; bottom: 730px; position: absolute;"></div>
+       <div class="table" style="left: 950px; bottom: 630px; position: absolute;"></div>
+       <div class="table" style="left: 950px; bottom: 1030px; position: absolute;"></div>
+       <div class="table" style="left: 950px; bottom: 930px; position: absolute;"></div>
+
+
+
+       <div id="locked_door_white" class="locked_door_white" style="left: 850px; bottom: 200px;"></div>
+       <div id="locked_door_black" class="locked_door_black" style="left: 350px; bottom: 200px;"></div>
+       <div id="exit_door" style="left: 0px; bottom: -50px;"></div>
+       <div id="key_card_white" class="key_card_white" style="left: 1200px; bottom: 1000px;">key white</div>
+       <div id="key_card_black" class="key_card_black" style="left: 100px; bottom: 1400px;">key black</div>
+  		 <div id="player" class="person" style="left: 150px; bottom: 700px;"></div>
+       <div id="monster" class="person" style="left: 1000px; bottom: 700px; display: none;"></div>
+       <div id="monster2" class="person" style="left: 1000px; bottom: 800px; display: none;"></div>
+       <div id="monsterPortal"  style="left: 1300px; bottom: 1250px; display: none;"></div>
+       <div id="medicKit" style="left: 300px; bottom: 50px;"></div>
+       <div id="portal" style="left: 0px; bottom: -50px;"></div>
+       <div id="bullet" style="left: 0px; bottom: -50px; display: none;" ></div>
+       <div id="pistol" style="left: 0px; bottom: -50px;"></div>
+       <div id="pistolCells" style="left: 0px; bottom: -50px;"></div>
+       <div id="shootGun" style="left: 1350px; bottom: 400px;"></div>
+       <div id="shootgunCells" style="left: 1300px; bottom: 500px;"></div>
+       <div class="modul" id="mod1" style="left: 0px; bottom: -50px;" >modul</div>
+       <div class="modul" id="mod2" style="left: 0px; bottom: -50px;" >modul</div>
+       <div class="modul" id="mod3" style="left: 0px; bottom: -50px;" >modul</div>
+       <div class="modul" id="mod4" style="left: 0px; bottom: -50px;" >modul</div>
+       <div class="modul" id="mod5" style="left: 0px; bottom: -50px;" >modul</div>
+       <div id="controlPanel" style="left: 1400px; bottom: 1400px;"></div>
+       <div id="doc" class="scientist" style="left: 950px; bottom: 600px;" ></div>
+       <div id="plasmaGun" style="left: 100px; bottom: 100px; display: none;"></div>
+       <div id="plasmagunCells" style="left: 200px; bottom: 200px; display: none;"></div>
+       <div class="deadMonster" style="left: 1150px; bottom: 850px; "></div>
+       <div class="deadMonster" style="left: 1000px; bottom: 700px; "></div>
+       <div class="deadMonster" style="left: 1100px; bottom: 1000px; "></div>
+       <div class="deadMonster" style="left: 1150px; bottom: 1300px; "></div>
+       <div class="deadMonster" style="left: 500px; bottom: 230px; "></div>
+       <div id="phoneSmall" style="left: 1150px; bottom: 800px; "></div>
+       <div class="toilet" style="left: 1200px; bottom: 1300px;" onclick="stat('some sheet there!!!')"></div>
+       <div class="sink" style="left: 1150px; bottom: 1300px; "></div>
+       <div id="megaMedicKit" style="left: 1350px; bottom: 450px;"></div>
+       
+  	</div>
+
+  </div>
+
+
+     
+ 
+   <div id="panel" class="world"></div>
+       <div id="navigator" class="world">
+           
+           <div id="iconPhone" style="display: none" onclick="showPhoneStory(textPhoneRu,textPhoneEng)"></div>
+           <div id='timer'></div>
+           <div id="iconPistol" onclick="selectPistolAttack()"></div>
+           <div id="iconShootgun" onclick="selectShootgunAttack()"></div>
+           <div id="iconPlasmagun" onclick="selectPlasmagunAttack()"></div>
+           <div id="iconWhiteCard"></div>
+           <div id="iconBlackCard"></div>
+       </div>
+    
+
+       
+       
+    <script type="text/javascript" src="JS/player.js"></script>
+    <script type="text/javascript" src="JS/bot.js"></script>
+    <script type="text/javascript" src="JS/bot2.js"></script>
+    <script type="text/javascript" src="JS/logik.js"></script>
+    <script type="text/javascript" src="JS/controlPanel.js"></script>
+    <script type="text/javascript" src="JS/getAccess.js"></script>
+    <script type="text/javascript" src="JS/secretDoor13.js"></script>
+    <script type="text/javascript" src="JS/story.js"></script>
+    <script type="text/javascript" src="JS/showPhoneStory.js"></script>
+    <script type="text/javascript" src="JS/hidePhone.js"></script>
+    <script type="text/javascript" src="JS/megaMedicKit.js"></script>
+    <script type="text/javascript" src="JS/copStory.js"></script>
+    <script type="text/javascript" src="JS/cop2Story.js"></script>
+    <script type="text/javascript" src="JS/ambient sound outdoor.js"></script>
+    
+    
+    <div id="message"></div>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>hidden structure</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0" xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="yellow-outline">
+            <feFlood id="outline-color" flood-color="#ffff00AA" result="base"/>
+            <feMorphology result="bigger" in="SourceGraphic" operator="dilate" radius="1"/>
+            <feComposite result="drop" in="base" in2="mask" operator="in"/>
+            <feBlend in="SourceGraphic" in2="normal" mode="normal"/>
+        </filter>
+    </defs>
+</svg>
+<div id="wievport" style="transition: all 2s ease";>
+    <div id="enterToLaboratory">
+
+
+
+
+
+       <!-- trees -->
+       <div class="tree" style="left: 100px; bottom: 300px; position: absolute;"></div>
+
+       <!-- building -->
+       <div class="building" style="left: 700px; bottom: 300px; position: absolute;"></div>
+
+
+       <!-- chain -->
+       <div class="chain" style="left: 0px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 50px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 100px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 150px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 200px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 250px; bottom: 300px; position: absolute;"></div>
+
+       <!-- grass -->
+       <div class="grass" style="left: 300px; bottom: 400px; position: absolute;"></div>
+       <div class="grass" style="left: 350px; bottom: 400px; position: absolute;"></div>
+       <div class="grass" style="left: 400px; bottom: 400px; position: absolute;"></div>
+       <div class="grass" style="left: 500px; bottom: 350px; position: absolute;"></div>
+       <div class="grass" style="left: 550px; bottom: 350px; position: absolute;"></div>
+       <div class="grassLong" style="left: 0px; bottom: 300px; position: absolute;"></div>
+
+
+       <!-- ground -->
+       <div class="groundLong" style="left: 0px; bottom: 250px; position: absolute;"></div>
+       <div class="groundLong" style="left: 0px; bottom: 200px; position: absolute;"></div>
+       <div class="groundLong" style="left: 0px; bottom: 150px; position: absolute;"></div>
+       <div class="groundLong" style="left: 0px; bottom: 100px; position: absolute;"></div>
+       <div class="groundLong" style="left: 0px; bottom: 50px; position: absolute;"></div>
+       <div class="groundLong" style="left: 0px; bottom: 0px; position: absolute;"></div>
+       <div class="groundLong" style="left: 0px; bottom: -50px; position: absolute;"></div>
+
+
+       
+       <!-- walls -->
+       <div class="w" style="left: 300px; bottom: 350px; position: absolute;"></div>
+       <div class="w" style="left: 350px; bottom: 350px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 350px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 300px; position: absolute;"></div>
+       <div class="w" style="left: 300px; bottom: 250px; position: absolute;"></div>
+       <div class="w" style="left: 300px; bottom: 200px; position: absolute;"></div>
+       <div class="w" style="left: 300px; bottom: 150px; position: absolute;"></div>
+       <div class="w" style="left: 300px; bottom: 100px; position: absolute;"></div>
+       <div class="w" style="left: 300px; bottom: 50px; position: absolute;"></div>
+       <div class="w" style="left: 300px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 350px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 450px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 500px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 550px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 600px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 650px; bottom: 0px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 250px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 200px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 150px; position: absolute;"></div>
+       <div class="w" style="left: 400px; bottom: 100px; position: absolute;"></div>
+       <div class="w" style="left: 450px; bottom: 100px; position: absolute;"></div>
+       <div class="w" style="left: 500px; bottom: 100px; position: absolute;"></div>
+       <div class="w" style="left: 550px; bottom: 100px; position: absolute;"></div>
+       <div class="w" style="left: 600px; bottom: 100px; position: absolute;"></div>
+       <div class="w" style="left: 650px; bottom: 100px; position: absolute;"></div>
+
+       <!-- black -->
+       <div class="black" style="left: 350px; bottom: 300px; position: absolute;"></div>
+       <div class="black" style="left: 350px; bottom: 250px; position: absolute;"></div>
+       <div class="black" style="left: 350px; bottom: 200px; position: absolute;"></div>
+       <div class="black" style="left: 350px; bottom: 150px; position: absolute;"></div>
+       <div class="black" style="left: 350px; bottom: 100px; position: absolute;"></div>
+       <div class="black" style="left: 350px; bottom: 50px; position: absolute;"></div>
+       <div class="black" style="left: 400px; bottom: 50px; position: absolute;"></div>
+       <div class="black" style="left: 450px; bottom: 50px; position: absolute;"></div>
+       <div class="black" style="left: 500px; bottom: 50px; position: absolute;"></div>
+       <div class="black" style="left: 550px; bottom: 50px; position: absolute;"></div>
+       <div class="black" style="left: 600px; bottom: 50px; position: absolute;"></div>
+       <div class="black" style="left: 650px; bottom: 50px; position: absolute;"></div>
+       
+       
+       <!-- lift -->
+       <div class="w" style="left: 300px; bottom: 300px; position: absolute;"></div>
+       <div id="portal" style="left: 650px; bottom: 50px;"></div>
+
+       <!-- actor -->
+      <div id="monster" class="person" style="left: 350px; bottom: 300px;"></div>
+       <!-- <div id="player" class="person" style="left: 50px; bottom: 300px;" onclick="stat()"></div> -->
+
+       <!-- doors -->
+       <div id="locked_door_black" class="locked_door_white" style="left: 850px; bottom: 300px;"></div>
+       
+       <div id="exit_door" style="left: 350px; bottom: 300px;"></div>
+
+       <!-- orbita logo -->
+       <div class="orbita" style="left: 750px; bottom: 440px; position: absolute;"></div>
+
+       <!-- neon board -->
+       <div class="pizza" style="left: 300px; bottom: 350px; position: absolute;"></div>
+       <div class="pizza" style="left: 400px; bottom: 350px; position: absolute;"></div>
+
+       <!-- trees -->
+       <div class="tree" style="left: 400px; bottom: 300px; position: absolute;"></div>
+       <div class="tree" style="left: 500px; bottom: 300px; position: absolute;"></div>
+       <div class="tree" style="left: 900px; bottom: 300px; position: absolute;"></div>
+       
+
+       <!-- chain -->
+       <div class="chain" style="left: 450px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 500px; bottom: 300px; position: absolute;"></div>
+       <div class="chain" style="left: 550px; bottom: 300px; position: absolute;"></div>
+       <div class="chainLong" style="left: 600px; bottom: 300px; position: absolute;"></div>
+       
+
+       <!-- garss cover -->
+       <div id="groundLongCover" style="left: 0px; bottom: 0px; position: absolute;"></div>
+       
+       <!-- car & stop -->
+       <div class="stop" style="left: 150px; bottom: 300px; position: absolute;"></div>
+
+       
+            
+            
+       
+    </div>
+
+    </div><br><br><br><br>
+<h2>END OF GAME<br>
+to be continued...</h2><br>
+
+        <!-- message -->
+        <div id="phoneBackground">
+               
+     
+      <div id="phone"> 
+           <div id="display">
+          
+                 <div class="yenSMS">
+                  <div class="dateTimeSMS">00:00</div>
+               HIDDEN STRUCTURE
+              </div>
+             
+               <div class="mySMS">
+                <div class="dateTimeSMS">00:01</div>
+                STATUS: completed
+              </div>
+            
+              
+
+           </div>
+           <div id='go' onClick='hideMessage()'>ok</div>
+      </div>
+
+     </div> 
+    <script type="text/javascript" src="JS/scene2.js"></script>
+    <div id="message"></div>
+  </body>
+</html>

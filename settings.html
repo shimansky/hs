@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hidden structure</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="JS/setLife.js"></script>
+     <meta charset="UTF-8">
+</head>
+<body>
+     <script type="text/javascript">
+     localStorage.setItem('lock1', 0);
+     localStorage.setItem('lock2', 1);
+     localStorage.setItem('lock3', 1);
+     localStorage.setItem('lock4', 1);
+     localStorage.setItem('lock5', 1);
+     localStorage.setItem('lock6', 1);
+     localStorage.setItem('lock7', 1);
+     localStorage.setItem('lock8', 1);
+     localStorage.setItem('lock9', 1);
+     localStorage.setItem('lock10', 1);
+     localStorage.setItem('level1', 0);
+     localStorage.setItem('level2', 0);
+     localStorage.setItem('level3', 0);
+     localStorage.setItem('level4', 0);
+     localStorage.setItem('level5', 0);
+     localStorage.setItem('level6', 0);
+     localStorage.setItem('level7', 0);
+     localStorage.setItem('level8', 0);
+     localStorage.setItem('level9', 0);
+     localStorage.setItem('level10', 0);
+     localStorage.setItem('flagPistol', 0);
+     localStorage.setItem('flagShootgun', 0);
+     localStorage.setItem('flagPlasmagun', 0);
+     localStorage.setItem('cells', 0);
+     localStorage.setItem('sCells', 0);
+     localStorage.setItem('plCells', 0);
+ </script>
+
+  <div id="indexMenu">
+    
+     <div class="downArrow"></div>
+     <br>
+     select difficult level:<br>
+     <a href="trailer.html" onclick="localStorage.setItem('flagShootgun', 1), localStorage.setItem('life', 1000);">easy</a><br>
+     <a href="trailer.html" onclick="localStorage.setItem('flagPistol', 1), localStorage.setItem('life', 800);">medium</a><br>
+     <a href="trailer.html" onclick="localStorage.setItem('flagPistol', 0), localStorage.setItem('life', 600);">hard</a><br>
+     <a href="trailer.html" onclick="localStorage.setItem('sCells', -10), localStorage.setItem('life', 300);">nightmare</a><br>
+     
+     <br>
+     <br>
+    
+    </div>
+  <br>
+          
+ 
+ 
+ <script type="text/javascript" src="JS/translate.js"></script>
+ 
+    
+           
+      
+</body>
+</html>

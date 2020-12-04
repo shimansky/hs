@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>hidden structure</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0" xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="yellow-outline">
+            <feFlood id="outline-color" flood-color="#ffff00AA" result="base"/>
+            <feMorphology result="bigger" in="SourceGraphic" operator="dilate" radius="1"/>
+            <feComposite result="drop" in="base" in2="mask" operator="in"/>
+            <feBlend in="SourceGraphic" in2="normal" mode="normal"/>
+        </filter>
+    </defs>
+</svg>
+<div id="wievport" onclick="sensorPlayerAttack()">
+  	<div id="game">
+       <div id="locked_door_white" class="locked_door_white" style="left: 600px; bottom: 400px;"></div>
+       <div id="locked_door_black" class="locked_door_black" style="left: 1250px; bottom: 1150px;"></div>
+       <div id="exit_door" style="left: 150px; bottom: 1250px;"></div>
+       <div id="key_card_white" class="key_card_white" style="left: 800px; bottom: 350px;">key white</div>
+       <div id="key_card_black" class="key_card_black" style="left: 1300px; bottom: 500px;">key black</div>
+  		 <div id="player" class="person" style="left: 50px; bottom: 1250px;"></div>
+       <div id="monster" class="person" style="left: 1100px; bottom: 600px; display: none;"></div>
+       <div id="monster2" class="person" style="left: 600px; bottom: 600px; display: none;"></div>
+       <div id="monsterPortal"  style="left: 1100px; bottom: 600px; display: none;"></div>
+       <div id="medicKit" style="left: 100px; bottom: 50px; display: none;"></div>
+       <div id="portal" style="left: 150px; bottom: 500px;"></div>
+       <div id="bullet" style="left: 650px; bottom: 800px; display: none;" ></div>
+       <div id="pistol" style="left: 650px; bottom: 800px; display: none"></div>
+       <div id="pistolCells" style="left: 700px; bottom: 800px; "></div>
+       <div id="shootGun" style="left: 250px; bottom: 500px; display: none"></div>
+       <div id="shootgunCells" style="left: 1000px; bottom: 150px; display: none"></div>
+       <div id="doc" class="scientist" style="left: 250px; bottom: 900px;" ></div>
+       <div id="hint" class="scientist" style="left: 650px; bottom: 800px;" ></div>
+       <div class="modul" id="mod1" style="left: 200px; bottom: 250px;" >modul</div>
+       <div class="modul" id="mod2" style="left: 200px; bottom: 250px;" >modul</div>
+       <div class="modul" id="mod3" style="left: 200px; bottom: 250px;" >modul</div>
+       <div class="modul" id="mod4" style="left: 200px; bottom: 250px;" >modul</div>
+       <div class="modul" id="mod5" style="left: 200px; bottom: 250px;" >modul</div>
+       <div class="labClone" style="left: 1150px; bottom: 1200px; display: none;"></div>
+       <div id="controlPanel" style="left: 1300px; bottom: 1300px;"></div>
+       <div id="plasmaGun" style="left: 100px; bottom: 100px; display: none;"></div>
+       <div id="plasmagunCells" style="left: 200px; bottom: 200px; display: none;"></div>
+       
+  	</div>
+  </div>
+
+   <div id="panel" class="world"></div>
+       <div id="navigator" class="world">
+           
+           <div id="iconPhone" onclick="stat('Лиса рассказывала, что система безопасности блокирует лифты, как только из них кто-то выходит. Нужно вручную включать доступ к дверям лифта с контрольной панели. Закрытые двери на этаже открываются с помощью карт доступа.')"></div>
+           <div id='timer'></div>
+           <div id="iconPistol" onclick="selectPistolAttack()"></div>
+           <div id="iconShootgun" onclick="selectShootgunAttack()"></div>
+           <div id="iconPlasmagun" onclick="selectPlasmagunAttack()"></div>
+           <div id="iconWhiteCard"></div>
+           <div id="iconBlackCard"></div>
+
+       </div>
+
+       
+    <script type="text/javascript" src="JS/crashLift.js"></script>  
+    <script type="text/javascript" src="JS/player.js"></script>
+    <script type="text/javascript" src="JS/bot.js"></script>
+    <script type="text/javascript" src="JS/bot2.js"></script>
+    <script type="text/javascript" src="JS/logik.js"></script>
+    <script type="text/javascript" src="JS/controlPanel.js"></script>
+    <script type="text/javascript" src="JS/hint01.js"></script>
+    <script type="text/javascript" src="JS/timer.js"></script>
+    <script type="text/javascript" src="JS/ambient sound 1st level.js"></script>
+    <div id="message"></div>
+  </body>
+</html>
